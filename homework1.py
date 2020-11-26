@@ -1,13 +1,14 @@
-user = input("Сколько вам лет? ")
-def age(user):
-    if user <= 6:
+def lifetime(user_age):
+
+    if user_age <= 6:
         return 'Детский сад'
-    elif  7 <= user <= 17:
+    elif  7 <= user_age <= 17:
         return 'Школа'
-    elif 18 <= user <= 23:
+    elif 18 <= user_age <= 23:
         return 'Вуз'
-    elif 24 <= user <= 65:
+    elif 24 <= user_age <= 66:
         return 'Работа'
     else:
         return 'Другое'
-print(age(int(user)))
+user_age = input("Сколько вам лет? ")
+print(lifetime(int(user_age)))
